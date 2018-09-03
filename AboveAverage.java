@@ -15,6 +15,7 @@ public class AboveAverage {
 		double sum = 0;
 		DecimalFormat df = new DecimalFormat("#.000");
 		
+		// Get Averages
 		for(int i = 0; i < C; i++) {
 			String[] str = classes[i].split(" ");
 			for (int j = 1; j < Integer.valueOf(str[0]) + 1; j++) {
@@ -25,7 +26,7 @@ public class AboveAverage {
 			sum = 0;
 		}
 		
-		
+		// Count number above avg 
 		int[] aboveAvg = new int[C];
 		for(int i = 0; i < C; i++) {
 			String[] str = classes[i].split(" ");
@@ -39,6 +40,7 @@ public class AboveAverage {
 			}
 		}
 		
+		// Calculatte above avg percent and print
 		for(int i = 0; i < C; i++) {
 			//System.out.println(aboveAvg[i]);
 			String[] str = classes[i].split(" ");
